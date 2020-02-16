@@ -35,8 +35,8 @@ async def on_message(message):
     if message.author == client.user:
         return
     # 「/neko」と発言したら「にゃーん」が返る処理
-    if message.content == '/neko':
-        await message.channel.send('にゃーん')
+    if message.content.startswith('@neko'):
+        await message.channel.send('にゃーん♪')
 
 
 # Botの起動とDiscordサーバーへの接続
