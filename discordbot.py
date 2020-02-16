@@ -32,7 +32,7 @@ async def ヤバい(ctx):
 @client.event
 async def on_message(message):
     # メッセージ送信者がBotだった場合は無視する
-    if message.author.bot:
+    if message.author == client.user:
         return
     # 「/neko」と発言したら「にゃーん」が返る処理
     if message.content == '/neko':
