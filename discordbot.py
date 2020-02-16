@@ -32,7 +32,7 @@ async def 頼む(ctx):
 
 @bot.command()
 async def たのむ(ctx):
-    await ctx.send('||http://bit.ly/2OYsFG5||')
+    await ctx.send('http://bit.ly/2OYsFG5')
 
 
 # Botの起動とDiscordサーバーへの接続
