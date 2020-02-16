@@ -20,15 +20,15 @@ async def on_command_error(ctx, error):
 # メッセージ受信時に動作する処理(頼んだわよ！)
 @bot.command()
 async def 頼んだ(ctx):
-    await ctx.send('||https://stickershop.line-scdn.net/stickershop/v1/sticker/60968934/android/sticker.png;compress=true||')
+    await ctx.send('||http://bit.ly/2OYsFG5')
 
 @bot.command()
 async def たのんだ(ctx):
-    await ctx.send('||https://stickershop.line-scdn.net/stickershop/v1/sticker/60968934/android/sticker.png;compress=true||')
+    await ctx.send('||http://bit.ly/2OYsFG5||')
 
 @bot.command()
 async def 頼む(ctx):
-    await ctx.send('||https://stickershop.line-scdn.net/stickershop/v1/sticker/60968934/android/sticker.png;compress=true||')
+    await ctx.send('||http://bit.ly/2OYsFG5||')
 
 @bot.command()
 async def たのむ(ctx):
