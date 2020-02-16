@@ -20,7 +20,7 @@ async def on_command_error(ctx, error):
 # メッセージ受信時に動作する処理(頼んだわよ！)
 @bot.command()
 async def 頼んだ(ctx):
-    await ctx.send('||http://bit.ly/2OYsFG5')
+    await ctx.send('||http://bit.ly/2OYsFG5||')
 
 @bot.command()
 async def たのんだ(ctx):
