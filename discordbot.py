@@ -18,9 +18,22 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 # メッセージ受信時に動作する処理
+# （注）コメントアウトで使用できないように設定中
+'''
 @bot.command()
 async def ping(ctx):
     await ctx.send('pongpong')
+'''
+
+# メッセージ受信時に動作する処理
+@bot.command()
+async def on_message(message):
+    # メッセージ送信者がBotだった場合は無視する
+    if message.author.bot:
+        return
+    # 「/neko」と発言したら「にゃーん」が返る処理
+    if message.content == '/neko':
+        await message.channel.send('にゃーん')
 
 # Botの起動とDiscordサーバーへの接続
 bot.run(token)
