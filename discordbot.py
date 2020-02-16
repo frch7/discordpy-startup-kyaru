@@ -27,6 +27,9 @@ async def on_command_error(ctx, error):
 async def ヤバい(ctx):
     await ctx.send('ヤバいわよ！')
 
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
 
 # メッセージ受信時に動作する処理
 @client.event
